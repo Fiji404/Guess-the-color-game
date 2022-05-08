@@ -1,0 +1,19 @@
+@use 'colors';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    background-color: colors.$bg;
+}
+
+.navigation {
+    padding: 1rem 0;
+    box-shadow: inset 0 0 15px 5px ;
+}
