@@ -1,0 +1,45 @@
+@use 'colors';
+@use 'mixins';
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    background-color: colors.$light-grey-transparent;
+    margin-bottom: 4rem;
+    &__title {
+        text-align: center;
+        font-weight: 300;
+        font-size: clamp(1.9rem, 1.5vw, 2.6rem);
+        color: colors.$color-header-primary;
+    }
+    &__login-link {
+        padding: .4rem 1rem;
+        background-color: lighten(colors.$light-grey, 20);
+        border-radius: .6rem;
+        text-decoration: none;
+        font-size: 1.15rem;
+        color: colors.$color-header-primary;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -10px;
+            height: 200%;
+            width: 4px;
+            background-color: lighten(colors.$light-grey, 40);
+            transition: 400ms ease;
+        }
+        &:hover::before {
+            left: 100%;
+        }
+    }
+}
