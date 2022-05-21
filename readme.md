@@ -1,3 +1,3 @@
-# [Guess the color game]
+# Guess the color game
 
-## this game is created for guessing the visible color in of colors system and then match it with color showed in user interface basicly.
+## This game is created for learn colors from rgb, hsl, hex color systems and for some fun with it !

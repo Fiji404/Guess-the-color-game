@@ -1,5 +1,4 @@
 @use 'colors';
-@use 'theme';
 @use 'navigation';
 @use 'mixins';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
@@ -16,6 +15,10 @@ html::-webkit-scrollbar {
 
 html::-webkit-scrollbar-thumb {
     background-color: colors.$light-grey;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: colors.$solid-dark;
 }
 
 body {

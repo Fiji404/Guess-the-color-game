@@ -1,50 +1,4 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap";
-.switch-theme {
-  cursor: pointer;
-  position: relative;
-}
-
-.switch-theme__option {
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
-  display: flex;
-}
-
-.switch-theme__button {
-  cursor: pointer;
-  background-color: #0000;
-  border: 2px solid #ebebeb;
-  border-radius: .4rem;
-  padding: .5rem .7rem;
-  font-family: Poppins, sans-serif;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.switch-theme__button:hover, .switch-theme__button:active {
-  background-color: #dedede;
-}
-
-.switch-theme__button:focus-within + .switch-theme__options {
-  height: auto;
-  transform: scaleY(1);
-}
-
-.switch-theme__options {
-  height: 0;
-  width: 170px;
-  max-height: 100px;
-  background-color: #e3e3e3;
-  border-radius: .4rem;
-  padding: .5rem;
-  position: absolute;
-  top: 45px;
-  left: 0;
-  transform: scaleY(0);
-  box-shadow: inset 0 0 0 4px #ebebeb;
-}
-
 .navbar {
   z-index: 1;
   -webkit-backdrop-filter: blur(8px);
@@ -105,6 +59,10 @@ html::-webkit-scrollbar {
 
 html::-webkit-scrollbar-thumb {
   background-color: #434343;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #000;
 }
 
 body {

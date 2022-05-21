@@ -1,0 +1,158 @@
+@use 'mixins';
+@use 'colors';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    padding: 1.75rem 1rem;
+    box-shadow: 0 5px 20px colors.$darker-white;
+    display: flex;
+    justify-content: space-around;
+    &__title {
+        font-weight: 500;
+        font-size: clamp(1.55rem, 2vw, 1.8rem);
+    }
+}
+
+.app {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statistics-dashboard {
+    width: min(90%, 1550px);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    &__header {
+        width: min(100%, 500px);
+        border-radius: 0 0 1rem 1rem;
+        box-shadow: 0 10px 20px colors.$darker-white,
+                inset 0 0 3px 3px colors.$darker-white; 
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        justify-items: center;
+        gap: 10px;
+    }
+    &__info {
+        font-size: clamp(1.3rem, 1.5vw, 1.6rem);
+        white-space: nowrap;
+        &_correct {
+            color: colors.$lime-green
+        }
+        &_incorrect {
+            color: colors.$darken-red;
+        }
+        &_points {
+            color: colors.$lighten-pink;
+        }
+    }
+}
+
+.game-interface {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.game-dashboard {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &__randomize-colors {
+        font-family: 'Poppins', sans-serif;
+        border: none;
+        background-color: colors.$bg-dark;
+        color: colors.$color-header-primary;
+        padding: .7rem 1.5rem;
+        border-radius: .5rem;
+        font-weight: 500;
+        font-size: clamp(1rem, 1.5vw, 1.3rem);
+        cursor: pointer;
+        transition: 250ms ease;
+        &:hover {
+            box-shadow: inset 0 0 5px darken(colors.$color-header-primary, 10);
+            transform: scale(.99);
+        }
+    }
+    &__intro {
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        min-height: 70px;
+    }
+    &__color-elements {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        gap: 1.4rem;
+    }
+}
+
+.drawn-color-pop-up {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.color-choice {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: filter 100ms ease;
+    border-radius: .5rem;
+    border: 3px solid colors.$light-grey;
+    animation: originate 1s ease var(--originate-delay) forwards;
+    
+    opacity: 0;
+
+    @keyframes originate {
+        to {
+            transform: scale(.95);
+            opacity: 1;
+        }
+    }
+    &__caption {
+        background-color: colors.$solid-dark;
+        border: 2px solid colors.$color-header-primary;
+        color: colors.$color-header-primary;
+        font-weight: 500;
+        font-size: 20px;
+        width: max-content;
+        padding: .3rem .7rem;
+        user-select: none;
+        transition: transform 1s ease;
+        cursor: pointer;
+        border-radius: .5rem;
+        &.revealed {
+            transform: rotate3d(0, 1, 0, 360deg);
+        }
+    }
+    
+    &:hover {
+        filter: brightness(.90)
+    }
+}
