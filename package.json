@@ -13,5 +13,8 @@
     "@parcel/transformer-sass": "^2.5.0",
     "color-name-list": "^9.7.1",
     "parcel": "^2.5.0"
+  },
+  "dependencies": {
+    "color": "^4.2.3"
   }
 }

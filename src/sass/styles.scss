@@ -43,9 +43,10 @@ body {
     background-color: lighten(colors.$light-grey-transparent, 10);
     border-radius: .4rem;
     cursor: pointer;
-    transition: transform 200ms ease-in;
+    transition: 200ms ease-in;
     &:hover {
         transform: scale(1.02);
+        filter: brightness(1.1);
     }
     &__title {
         color: colors.$color-header-primary;
@@ -57,7 +58,6 @@ body {
         }
         > i.fa-user-graduate {
             color: rgb(194, 194, 194);
-
         }
     }
     &__desc {

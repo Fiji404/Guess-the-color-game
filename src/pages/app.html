@@ -17,28 +17,24 @@
             <header>
                 <h1 class="navbar__title">Guess the color game</h1>
             </header>
-            <!-- user dashboard -->
+            <div>
+                <a href="/">Back to home</a>
+            </div>
         </nav>
         <main class="app">
             <section class="statistics-dashboard">
                 <header class="statistics-dashboard__header">
                     <h2 class="statistics-dashboard__info">
                         Correct:
-                        <output class="statistics-dashboard__info_correct"
-                            >0</output
-                        >
+                        <output class="statistics-dashboard__info_correct">0</output>
                     </h2>
                     <h2 class="statistics-dashboard__info">
                         Points:
-                        <output class="statistics-dashboard__info_points"
-                            >0</output
-                        >
+                        <output class="statistics-dashboard__info_points">0</output>
                     </h2>
                     <h2 class="statistics-dashboard__info">
                         Mistakes:
-                        <output class="statistics-dashboard__info_incorrect"
-                            >0</output
-                        >
+                        <output class="statistics-dashboard__info_incorrect">0</output>
                     </h2>
                 </header>
             </section>
@@ -46,60 +42,56 @@
                 <section class="game-dashboard">
                     <header class="game-dashboard__intro">
                         <button class="game-dashboard__randomize-colors">
-                            Randomize new color's <i class="fa-solid fa-arrows-rotate"></i>
+                            Randomize new color's
+                            <i class="fa-solid fa-arrows-rotate"></i>
                         </button>
                         <!-- <div class="drawn-color-pop-up"> -->
-                            <h2 aria-label="drawn color value" class="game-dashboard__color-name"></h2>
+                        <h2 aria-label="drawn color value" class="game-dashboard__color-name">Your color is: <span></span></h2>
                         <!-- </div> -->
+                        <!-- <div>
+                            <label for="color-system"
+                                >Choose other color system</label
+                            >
+                            <select
+                                id="color-system"
+                                class="game-dashboard__change-color-system"
+                            >
+                                <option>RGB</option>
+                                <option>HEX</option>
+                                <option>HSL</option>
+                            </select>
+                        </div> -->
+                        <button class="game-dashboard__submit-answer">Submit answer</button>
                     </header>
                     <section class="game-dashboard__color-elements">
-                        <figure
-                            style="--originate-delay: 100ms"
-                            class="color-choice"
-                        >
-                            <figcaption class="color-choice__caption">
-                                Reveal color
-                            </figcaption>
+                        <figure style="--originate-delay: 100ms" class="color-choice">
+                            <input class="color-choice__checkbox" name="selected-color" type="checkbox" />
+                            <figcaption class="color-choice__caption">Reveal color</figcaption>
                         </figure>
-                        <figure
-                            style="--originate-delay: 400ms"
-                            class="color-choice"
-                        >
-                            <figcaption class="color-choice__caption">
-                                Reveal color
-                            </figcaption>
+                        <figure style="--originate-delay: 400ms" class="color-choice">
+                            <input class="color-choice__checkbox" name="selected-color" type="checkbox" />
+
+                            <figcaption class="color-choice__caption">Reveal color</figcaption>
                         </figure>
-                        <figure
-                            style="--originate-delay: 200ms"
-                            class="color-choice"
-                        >
-                            <figcaption class="color-choice__caption">
-                                Reveal color
-                            </figcaption>
+                        <figure style="--originate-delay: 200ms" class="color-choice">
+                            <input class="color-choice__checkbox" name="selected-color" type="checkbox" />
+
+                            <figcaption class="color-choice__caption">Reveal color</figcaption>
                         </figure>
-                        <figure
-                            style="--originate-delay: 800ms"
-                            class="color-choice"
-                        >
-                            <figcaption class="color-choice__caption">
-                                Reveal color
-                            </figcaption>
+                        <figure style="--originate-delay: 800ms" class="color-choice">
+                            <input class="color-choice__checkbox" name="selected-color" type="checkbox" />
+
+                            <figcaption class="color-choice__caption">Reveal color</figcaption>
                         </figure>
-                        <figure
-                            style="--originate-delay: 600ms"
-                            class="color-choice"
-                        >
-                            <figcaption class="color-choice__caption">
-                                Reveal color
-                            </figcaption>
+                        <figure style="--originate-delay: 600ms" class="color-choice">
+                            <input class="color-choice__checkbox" name="selected-color" type="checkbox" />
+
+                            <figcaption class="color-choice__caption">Reveal color</figcaption>
                         </figure>
-                        <figure
-                            style="--originate-delay: 1000ms"
-                            class="color-choice"
-                        >
-                            <figcaption class="color-choice__caption">
-                                Reveal color
-                            </figcaption>
+                        <figure style="--originate-delay: 1000ms" class="color-choice">
+                            <input class="color-choice__checkbox" name="selected-color" type="checkbox" />
+
+                            <figcaption class="color-choice__caption">Reveal color</figcaption>
                         </figure>
                     </section>
                 </section>
