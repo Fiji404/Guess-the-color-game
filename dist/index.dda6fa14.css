@@ -26,7 +26,23 @@
 }
 
 .navbar__logo {
-  max-width: 60px;
+  color: #fff;
+  text-align: center;
+  background-image: linear-gradient(45deg, #fff, #f0d);
+  -webkit-background-clip: text;
+  color: #0000;
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 30px;
+  line-height: 1.1;
+  animation: glowing 1s linear infinite alternate;
+}
+
+@keyframes glowing {
+  to {
+    background-position: 100%;
+  }
 }
 
 .navbar__title {
@@ -138,6 +154,15 @@ body {
   color: #e6e6e6;
   text-align: center;
   font-size: 1.1rem;
+}
+
+.game-topics-description {
+  background-color: #4343436b;
+  margin-top: 2rem;
+}
+
+.about-the-game__logo {
+  max-width: 150px;
 }
 
 /*# sourceMappingURL=index.dda6fa14.css.map */

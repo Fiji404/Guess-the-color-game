@@ -27,6 +27,11 @@ body {
   font-weight: 500;
 }
 
+.back-to-home {
+  color: #000;
+  font-size: 20px;
+}
+
 .app {
   flex-direction: column;
   flex-grow: 1;
@@ -102,6 +107,11 @@ body {
   box-shadow: 0 0 10px #c3c3c3;
 }
 
+.game-dashboard__submit-answer[disabled] {
+  cursor: not-allowed;
+  color: #000;
+}
+
 .game-dashboard__randomize-colors {
   color: #fff;
   cursor: pointer;
@@ -118,22 +128,6 @@ body {
 .game-dashboard__randomize-colors:hover {
   transform: scale(.99);
   box-shadow: inset 0 0 5px #e6e6e6;
-}
-
-.game-dashboard__change-color-system {
-  width: 70px;
-  height: 30px;
-  text-align: center;
-  cursor: pointer;
-  border: 2px solid #434343;
-  border-radius: .3rem;
-  font-family: Poppins, sans-serif;
-  font-size: 1.1rem;
-  font-weight: 500;
-}
-
-.game-dashboard__change-color-system > option {
-  cursor: pointer;
 }
 
 .game-dashboard__color-name {
@@ -165,10 +159,39 @@ body {
 }
 
 .drawn-color-pop-up {
-  position: absolute;
-  top: 50%;
+  width: 90%;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  background-color: #222;
+  border-radius: .5rem;
+  padding: 1rem 2rem;
+  transition: top .2s;
+  position: fixed;
+  top: -250px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  overflow: hidden;
+  transform: translateX(-50%);
+}
+
+.drawn-color-pop-up.active {
+  top: 20px;
+}
+
+.drawn-color-pop-up:before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #f90;
+  transition: width 4s linear;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.drawn-color-pop-up.active:before {
+  width: 0;
 }
 
 .color-choice {

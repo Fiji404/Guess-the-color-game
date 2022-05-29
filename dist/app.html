@@ -17,7 +17,7 @@
                 <h1 class="navbar__title">Guess the color game</h1>
             </header>
             <div>
-                <a href="/">Back to home</a>
+                <a class="back-to-home" href="/">Back to home</a>
             </div>
         </nav>
         <main class="app">
@@ -44,22 +44,10 @@
                             Randomize new color's
                             <i class="fa-solid fa-arrows-rotate"></i>
                         </button>
-                        <!-- <div class="drawn-color-pop-up"> -->
+                        <div aria-label="notification about correct color" class="drawn-color-pop-up">
+                            <h2>You have guessed the color 🎉 !</h2>
+                        </div> 
                         <h2 aria-label="drawn color value" class="game-dashboard__color-name">Your color is: <span></span></h2>
-                        <!-- </div> -->
-                        <!-- <div>
-                            <label for="color-system"
-                                >Choose other color system</label
-                            >
-                            <select
-                                id="color-system"
-                                class="game-dashboard__change-color-system"
-                            >
-                                <option>RGB</option>
-                                <option>HEX</option>
-                                <option>HSL</option>
-                            </select>
-                        </div> -->
                         <button class="game-dashboard__submit-answer">Submit answer</button>
                     </header>
                     <section class="game-dashboard__color-elements">

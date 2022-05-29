@@ -66,3 +66,14 @@ body {
         font-size: 1.1rem;
     }
 }
+
+.game-topics-description {
+    margin-top: 2rem;
+    background-color: colors.$light-grey-transparent;
+}
+
+.about-the-game {
+    &__logo {
+        max-width: 150px;
+    }
+}
