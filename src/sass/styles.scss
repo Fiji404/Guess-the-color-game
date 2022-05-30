@@ -10,7 +10,7 @@
 }
 
 html::-webkit-scrollbar {
-    width: 1.8vw;
+    width: 1vw;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -18,7 +18,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 html::-webkit-scrollbar-track {
-    background-color: colors.$solid-dark;
+    background-color: colors.$darker-white;
 }
 
 body {
@@ -67,13 +67,43 @@ body {
     }
 }
 
-.game-topics-description {
+.game-topics {
     margin-top: 2rem;
-    background-color: colors.$light-grey-transparent;
+
 }
 
-.about-the-game {
+.game-topic-explanation {
+    background-color: colors.$light-grey-transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 90%;
+    margin: 0 auto;
+    min-height: 400px;
+    margin-bottom: 30px;
+    &__video {
+        max-width: 100%;
+        border-radius: .4rem;
+        margin-top: 20px;
+    }
+    &__title {
+        color: colors.$color-header-primary;
+        font-size: 30px;
+    }
+    &__header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        &:hover .game-topic-explanation__logo {
+            padding: 15px;
+        }
+    }
     &__logo {
-        max-width: 150px;
+        max-width: 80px;
+        box-sizing: content-box;
+        padding: 5px;
+        background-color: colors.$light-grey;
+        border-radius: 1rem;
+        transition: 200ms ease;
     }
 }

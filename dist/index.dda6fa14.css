@@ -9,7 +9,7 @@
   align-items: center;
   gap: 15px;
   margin-bottom: 4rem;
-  padding: 1.5rem 1rem;
+  padding: 1rem;
   display: flex;
   position: sticky;
   top: 0;
@@ -26,17 +26,7 @@
 }
 
 .navbar__logo {
-  color: #fff;
-  text-align: center;
-  background-image: linear-gradient(45deg, #fff, #f0d);
-  -webkit-background-clip: text;
-  color: #0000;
-  background-size: 200%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  font-size: 30px;
-  line-height: 1.1;
-  animation: glowing 1s linear infinite alternate;
+  max-width: 150px;
 }
 
 @keyframes glowing {
@@ -93,7 +83,7 @@
 }
 
 html::-webkit-scrollbar {
-  width: 1.8vw;
+  width: 1vw;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -101,7 +91,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 html::-webkit-scrollbar-track {
-  background-color: #000;
+  background-color: #ebebeb;
 }
 
 body {
@@ -156,13 +146,48 @@ body {
   font-size: 1.1rem;
 }
 
-.game-topics-description {
-  background-color: #4343436b;
+.game-topics {
   margin-top: 2rem;
 }
 
-.about-the-game__logo {
-  max-width: 150px;
+.game-topic-explanation {
+  max-width: 90%;
+  min-height: 400px;
+  background-color: #4343436b;
+  border-radius: 1rem;
+  margin: 0 auto 30px;
+  padding: 2rem;
+}
+
+.game-topic-explanation__video {
+  max-width: 100%;
+  border-radius: .4rem;
+  margin-top: 20px;
+}
+
+.game-topic-explanation__title {
+  color: #fff;
+  font-size: 30px;
+}
+
+.game-topic-explanation__header {
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  display: flex;
+}
+
+.game-topic-explanation__header:hover .game-topic-explanation__logo {
+  padding: 15px;
+}
+
+.game-topic-explanation__logo {
+  max-width: 80px;
+  box-sizing: content-box;
+  background-color: #434343;
+  border-radius: 1rem;
+  padding: 5px;
+  transition: all .2s;
 }
 
 /*# sourceMappingURL=index.dda6fa14.css.map */

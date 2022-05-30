@@ -14,9 +14,9 @@ body {
 }
 
 .navbar {
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 1.75rem 1rem;
+  padding: 1rem;
   display: flex;
   box-shadow: 0 5px 20px #ebebeb;
 }
@@ -28,8 +28,16 @@ body {
 }
 
 .back-to-home {
-  color: #000;
-  font-size: 20px;
+  color: #262626;
+  border-radius: .5rem;
+  padding: .4rem 1rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  box-shadow: 0 0 20px #d2d2d2;
+}
+
+.navbar__logo {
+  max-width: 140px;
 }
 
 .app {
@@ -159,7 +167,7 @@ body {
 }
 
 .drawn-color-pop-up {
-  width: 90%;
+  width: min(90%, 480px);
   z-index: 1;
   color: #fff;
   text-align: center;

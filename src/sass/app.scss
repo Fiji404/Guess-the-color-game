@@ -17,10 +17,10 @@ body {
 }
 
 .navbar {
-    padding: 1.75rem 1rem;
+    padding: 1rem 1rem;
     box-shadow: 0 5px 20px colors.$darker-white;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     &__title {
         font-weight: 500;
@@ -30,8 +30,16 @@ body {
 }
 
 .back-to-home {
-    color: #000;
-    font-size: 20px;
+    text-decoration: none;
+    padding: .4rem 1rem;
+    box-shadow: 0 0 20px darken(colors.$darker-white, 10);
+    border-radius: .5rem;
+    color: colors.$bg-dark;
+    font-size: 1.2rem;
+}
+
+.navbar__logo {
+    max-width: 140px;
 }
 
 .app {
@@ -154,7 +162,7 @@ body {
     transform: translateX(-50%);
     background-color: #222;
     padding: 1rem 2rem;
-    width: 90%;
+    width: min(90%, 480px);
     z-index: 1;
     border-radius: .5rem;
     color: #fff;
@@ -245,3 +253,4 @@ body {
         filter: brightness(.90)
     }
 }
+

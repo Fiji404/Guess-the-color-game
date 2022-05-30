@@ -526,6 +526,13 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"fFaKF":[function(require,module,exports) {
+const contentSections = document.querySelectorAll('.info-card');
+contentSections.forEach((section)=>{
+    section.addEventListener('click', ()=>{
+        const sectionTopicName = section.dataset.sectionName;
+        console.log(sectionTopicName);
+    });
+});
 
 },{}]},["k9TbP","fFaKF"], "fFaKF", "parcelRequireb743")
 

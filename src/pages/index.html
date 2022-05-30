@@ -7,13 +7,14 @@
         <link rel="icon" href="../images/question-mark-logo.png" />
         <link rel="stylesheet" href="../sass/styles.scss" />
         <script src="https://kit.fontawesome.com/753d009a2f.js" crossorigin="anonymous"></script>
-        <script type="module" defer src="../scripts/index.js">module;</script>
+        <script type="module" defer src="../scripts/index.js">
+            module;
+        </script>
         <title>Guess the color</title>
     </head>
     <body>
         <nav class="navbar">
-            <h2 class="navbar__logo">Guess <br> The <br> Color</h2>
-            <!-- <img class="navbar__logo" src="../images/cos.png" alt="question mark logo"> -->
+            <a href="/"><img class="navbar__logo" src="../images/header-logo.png" alt="question mark logo" /></a>
             <header>
                 <h1 class="navbar__title">Guess the color game <span>Beta</span></h1>
             </header>
@@ -21,36 +22,46 @@
         </nav>
         <main class="main-content">
             <article class="main-content__intro">
-                <section style="--slide-delay: 100ms" class="info-card">
-                    <h2 class="info-card__title">About this game</h2>
-                    <p class="info-card__desc">
-                        This game offers do some fun with colors and guessing skills 😉, you can compete with your friends and train your skills in recognizing colors from values 
-                    </p>
-                </section>
+                    <section data-sectionName="about-the-game" style="--slide-delay: 100ms" class="info-card">
+                        <h2 class="info-card__title">About this game</h2>
+                        <p class="info-card__desc">This game offers do some fun with colors and guessing skills 😉, you can compete with your friends and train your skills in recognizing colors from values</p>
+                    </section>
                 <section style="--slide-delay: 200ms" class="info-card">
                     <h2 class="info-card__title">What can i get ? <i class="fa-solid fa-user-graduate"></i></h2>
-                    <p class="info-card__desc">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi numquam necessitatibus magni
-                        officiis. Consequuntur nostrum cumque dolores dicta numquam minus!
-                    </p>
+                    <p class="info-card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi numquam necessitatibus magni officiis. Consequuntur nostrum cumque dolores dicta numquam minus!</p>
                 </section>
                 <section style="--slide-delay: 300ms" class="info-card">
                     <h2 class="info-card__title">Compete with others <i class="fa-solid fa-star"></i></h2>
-                    <p class="info-card__desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique qui temporibus corporis odio
-                        veniam rerum perspiciatis ut velit maxime facilis?
-                    </p>
+                    <p class="info-card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique qui temporibus corporis odio veniam rerum perspiciatis ut velit maxime facilis?</p>
                 </section>
             </article>
             <article class="game-topics">
-                <section class="about-the-game">
-                    <header>
-                        <img class="about-the-game__logo" src="../images/gamepad.svg" alt="gamepad logo">
-                        <h2>About this game </h2>
+                <section id="game" class="game-topic-explanation">
+                    <header class="game-topic-explanation__header">
+                        <img class="game-topic-explanation__logo" src="../images/gamepad.svg" alt="gamepad logo" />
+                        <h2 class="game-topic-explanation__title">About this game</h2>
                     </header>
-                    <div>
-                        
-                    </div>
+                    <section>
+                        <h3 style="color: #fff; text-align: center">Video preview</h3>
+                        <p style="color: #fff; text-align: center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vel dicta sed error aliquam officiis sapiente eaque hic quasi pariatur ipsa totam eligendi sint excepturi repudiandae asperiores ullam ea delectus tempore saepe exercitationem, earum maiores rerum. Tempora molestias sapiente doloremque animi quasi minus assumenda. Iste, vitae? Similique perferendis consequatur aut mollitia, perspiciatis odit exercitationem harum temporibus ratione molestiae ea soluta, necessitatibus minus officia doloribus ut, numquam omnis! Blanditiis autem aperiam dolore ducimus doloremque maiores facilis asperiores nesciunt possimus ex officiis, quis ab laborum fuga optio adipisci suscipit magnam et expedita. Quia assumenda illo fugit quasi deleniti enim voluptate similique corporis?</p>
+                        <video class="game-topic-explanation__video" controls src="../videos/app-presentation.mp4"></video>
+                    </section>
+                </section>
+                <section class="game-topic-explanation">
+                    <header class="game-topic-explanation__header">
+                            <img class="game-topic-explanation__logo" src="../images/gamepad.svg" alt="gamepad logo" />
+                        <h2 class="game-topic-explanation__title">About this game</h2>
+                    </header>
+                    <section>
+                    </section>
+                </section>
+                <section class="game-topic-explanation">
+                    <header class="game-topic-explanation__header">
+                        <img class="game-topic-explanation__logo" src="../images/gamepad.svg" alt="gamepad logo" />
+                        <h2 class="game-topic-explanation__title">About this game</h2>
+                    </header>
+                    <section>
+                    </section>
                 </section>
             </article>
         </main>
